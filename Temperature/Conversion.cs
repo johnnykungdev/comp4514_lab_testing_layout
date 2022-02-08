@@ -35,7 +35,7 @@ namespace Temperature
                     break;
                 case ConversionMode.Fahrenheit_to_Kelvin:
                     // K = 5/9 (° F - 32) + 273
-                    result = 5d/9d *(temperature - 32) +273;
+                    result = 5d/9d *(temperature - 30) +273;
                     break;
             }
             return Math.Round(result, 2);
